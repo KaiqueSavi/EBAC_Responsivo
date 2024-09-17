@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0e09c1;
+    padding: 10px 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.about img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.products {
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product .price {
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    background-color: #0e09c1;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #82b3a1;
+}
+
+.subscribe {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe input, .subscribe textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+.subscribe button {
+    width: 320px;
+    background-color: #0e09c1;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2e3d49;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .address {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        margin-bottom: 20px;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe input, .subscribe textarea {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+  }
